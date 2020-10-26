@@ -1,0 +1,9 @@
+This is a internal project, so use flexbox for sure
+
+
+Dont need to worry about IE support
+
+
+WEDNESDAY
+
+Create a sort button for albums that sorts by name alpabetical, playcount, and albumn name

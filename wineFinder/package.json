@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate JS project to clone into other accounts as a starting place",
+  "scripts": {
+    "start": "http-server -p 8080 --cors ./dist",
+    "start:secure": "http-server -S -K ~/wayin.key -C ~/wayin.crt -p 8448 --cors ./dist",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.dev.js",
+    "build:min": "webpack --config webpack.prod.js",
+    "release": "npm run build:min",
+    "stage": "webpack --config webpack.stage.js"
+  },
+  "author": "Aaron Major",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^6.0.3",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "selectize": "^0.12.6",
+    "vue": "^2.6.11"
+    },
+  "vue": {
+    "runtimeCompiler": "true"
+  }
+}
